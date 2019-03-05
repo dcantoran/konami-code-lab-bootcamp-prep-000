@@ -11,41 +11,21 @@ const codes = [
   "a"
 ];
 
-let index = 0;
-
-function init(e) {
+function init() {
   // your code here
-  document.body.addEventListener('keydown', init);
-  const key = e.key;
+  let index = 0;
+  document.body.addEventListener(`keydown`, function(e) {
+    const key = e.key;
   
-  if (key === codes[index]) {
-    index++;
-  
-  
-    if (index === 9) {
-      alert("Hurray!");
+    if (key === codes[index]) {
+      index++;
+      if (index === 9) {
+        alert("Hurray!");
+        index = 0;
+      }
+    } else {
       index = 0;
     }
-  } else {
-    index = 0;
-  }
+  });
 }
 
-// document.body.addEventListener("keydown", (init) => {
-//   const key = init.key 
-  
-  
-//   if (codes[index] === key) {
-//     ++index 
-//   } 
-  
-//   else {
-//     idx = 0 
-//   }
-  
-  
-//   if (index === 10) {
-//     alert("Hurray!");
-//     index = 0 
-//   }
-// }); 
