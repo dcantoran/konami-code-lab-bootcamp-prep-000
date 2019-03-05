@@ -11,41 +11,41 @@ const codes = [
   "a"
 ];
 
-// let index = 0;
-// document.body.addEventListener('keydown', init);
-// function init(e) {
-//   // your code here
+let index = 0;
+document.body.addEventListener('keydown', init);
+function init(e) {
+  // your code here
   
-//   const key = e.key;
+  const key = e.key;
   
-//   if (key === codes[index]) {
-//     index++;
+  if (key === codes[index]) {
+    index++;
   
   
-//     if (index === codes.length) {
-//       alert("Hurray!");
-//       index = 0;
-//     }
-//   } else {
-//     index = 0
-//   }
-// }
+    if (index === codes.length) {
+      alert("Hurray!");
+      index = 0;
+    }
+  } else {
+    index = 0
+  }
+}
 
-document.body.addEventListener("keydown", (init) => {
-  const key = init.key 
+// document.body.addEventListener("keydown", (init) => {
+//   const key = init.key 
   
   
-  if (codes[index] === key) {
-    ++index 
-  } 
+//   if (codes[index] === key) {
+//     ++index 
+//   } 
   
-  else {
-    idx = 0 
-  }
+//   else {
+//     idx = 0 
+//   }
   
   
-  if (index === 10) {
-    alert("Hurray!");
-    index = 0 
-  }
-}); 
+//   if (index === 10) {
+//     alert("Hurray!");
+//     index = 0 
+//   }
+// }); 
