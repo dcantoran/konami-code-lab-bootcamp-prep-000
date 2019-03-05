@@ -22,7 +22,7 @@ function init(e) {
     index++;
   
   
-    if (index === codes.length) {
+    if (index === 10) {
       alert("Hurray!");
       index = 0;
     }
