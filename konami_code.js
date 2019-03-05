@@ -33,7 +33,7 @@ function init(e) {
 
 document.body.addEventListener("keydown", (thingPressed) => {
   const key = thingPressed.key 
-  console.log(key) 
+  
   
   if (codes[index] === key) {
     ++index 
@@ -43,7 +43,7 @@ document.body.addEventListener("keydown", (thingPressed) => {
     idx = 0 
   }
   
-  console.log(index)
+  
   if (index === 10) {
     alert("Hurray!");
     index = 0 
