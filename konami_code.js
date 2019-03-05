@@ -14,7 +14,18 @@ const codes = [
 function init() {
   // your code here
   var index = 0;
-  document.body.addEventListener('keydown', onKeyDownHandler)
+  document.body.addEventListener('keydown', onKeyDownHandler);
+  const key = e.key;
+  
+  if (key === alphabet[index]) {
+    index++;
   
   
+    if (index === alphabet.length) {
+      alert("Hurray!");
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
 }
