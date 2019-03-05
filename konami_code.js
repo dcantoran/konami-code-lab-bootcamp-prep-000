@@ -19,7 +19,7 @@ function init() {
   
     if (key === codes[index]) {
       index++;
-      if (index === 9) {
+      if (index === 10) {
         alert("Hurray!");
         index = 0;
       }
